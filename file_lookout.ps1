@@ -1,7 +1,7 @@
 $source="C:\temp\source"
 $target="C:\temp\target"
 
-$files = "C:\temp\source\test.txt"
+$files = "$source\test.txt"
 
 $i = 0
 function get-sleep{
@@ -46,4 +46,4 @@ while($i -eq 0)
 }
 
 ######### Your operation comes here ##########
-Move-Item "$source\test.txt" $target 
+Move-Item $files $target 
